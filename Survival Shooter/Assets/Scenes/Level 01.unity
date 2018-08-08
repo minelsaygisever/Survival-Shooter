@@ -139,7 +139,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4fff99673a41e24439d527ad0bd6b569, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
@@ -579,6 +579,19 @@ CapsuleCollider:
   m_Height: 1.5
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}
+--- !u!114 &814747267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814747261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e15099f5ee559584089d5851df572def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 0.5
+  attackDamage: 10
 --- !u!195 &814747268
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -650,6 +663,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 82330075552434294, guid: 03267499b58ad104c9a2c6aa0db6656f,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82330075552434294, guid: 03267499b58ad104c9a2c6aa0db6656f,
+        type: 2}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03267499b58ad104c9a2c6aa0db6656f, type: 2}
   m_IsPrefabParent: 0
@@ -658,6 +681,29 @@ Transform:
   m_PrefabParentObject: {fileID: 4860335555736354, guid: 03267499b58ad104c9a2c6aa0db6656f,
     type: 2}
   m_PrefabInternal: {fileID: 834242787}
+--- !u!1 &834242789 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1139039973445068, guid: 03267499b58ad104c9a2c6aa0db6656f,
+    type: 2}
+  m_PrefabInternal: {fileID: 834242787}
+--- !u!114 &834242790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 834242789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  healthSlider: {fileID: 2071686886}
+  damageImage: {fileID: 835184664}
+  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
+  flashSpeed: 5
+  flashColour: {r: 1, g: 0, b: 0, a: 0.278}
 --- !u!1 &835184662
 GameObject:
   m_ObjectHideFlags: 0
